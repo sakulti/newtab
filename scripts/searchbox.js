@@ -5,7 +5,7 @@ const google = 'https://www.google.com/search?q=';
 function submitted(event) {
   event.preventDefault();
   const url = google + '+' + q.value;
-  location.replace(url);
+  location.assign(url);
 }
 
 f.addEventListener('submit', submitted);
